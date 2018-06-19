@@ -8,12 +8,15 @@ module.exports = function handler(message, context, callback) {
   // Copy the specific values we want to save into the Table record
   const params = {
     Item: {
-      "email": {
-        S: signup.email
+      "First name": {
+        S: signup.first-name
       }, 
-      "name": {
-        S: signup.name
+      "Last name": {
+        S: signup.last-name
       }, 
+      "Email": {
+        S: signup.email-input
+      }
     },
     ReturnConsumedCapacity: "TOTAL", 
     TableName: ports[0][0].tableName
