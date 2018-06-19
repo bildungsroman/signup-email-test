@@ -9,13 +9,13 @@ module.exports = function handler(message, context, callback) {
   const params = {
     Item: {
       "First name": {
-        S: signup.first-name
+        S: signup.first_name
       }, 
       "Last name": {
-        S: signup.last-name
+        S: signup.last_name
       }, 
       "Email": {
-        S: signup.email-input
+        S: signup.email_input
       }
     },
     ReturnConsumedCapacity: "TOTAL", 
