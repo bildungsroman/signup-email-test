@@ -3,9 +3,9 @@
     {
       "id": "15100903",
       "type": "http",
-      "x": 197.5,
+      "x": 217.5,
       "y": 235,
-      "width": 185,
+      "width": 225,
       "height": 260
     },
     {
@@ -43,8 +43,8 @@
       "y": 275,
       "width": 100,
       "height": 30,
-      "name": "email",
-      "path": "/submit",
+      "name": "Newsletter Signup",
+      "path": "/signup",
       "method": "POST",
       "wires": [
         [
@@ -59,7 +59,7 @@
       "y": 195,
       "width": 100,
       "height": 30,
-      "name": "HandleSubmit",
+      "name": "SignupHandler",
       "outputs": 1,
       "memorySize": 3008,
       "timeout": 30,
@@ -67,6 +67,22 @@
       "location": "inline",
       "envVars": {},
       "entryPoint": "",
+      "wires": [
+        [
+          "c16a9eae"
+        ]
+      ]
+    },
+    {
+      "id": "c16a9eae",
+      "type": "table",
+      "x": 730,
+      "y": 180,
+      "width": 100,
+      "height": 30,
+      "name": "Signup",
+      "hashKey": "email",
+      "hashKeyType": "string",
       "wires": [
         []
       ]
