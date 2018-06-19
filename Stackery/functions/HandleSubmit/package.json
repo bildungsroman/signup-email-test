@@ -3,6 +3,8 @@
   "name": "handlesubmit",
   "version": "1.0.0",
   "dependencies": {
-    "aws-sdk": "~2"
+    "aws-sdk": "~2",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
   }
 }
